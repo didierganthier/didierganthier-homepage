@@ -3,6 +3,7 @@ import Paragraph from "../components/paragraph";
 import Section from "../components/section";
 import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { BioSection, BioYear } from "../components/bio";
 
 const Page = () => {
     return (
@@ -37,13 +38,63 @@ const Page = () => {
                 </NextLink>.
                 </Paragraph>
                 <Box align="center" my={4}>
-                    <NextLink href="works/thespot">
+                    <NextLink href="works/">
                         <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
                             My Portfolio
                         </Button>
                     </NextLink>
                 </Box>
             </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>1998</BioYear>
+                    Born in Port-au-Prince, Haiti.   
+                </BioSection>
+                <BioSection>
+                    <BioYear>2014</BioYear>
+                    Started coding with Python and C. Completed first project (Calculator).  
+                </BioSection>
+                <BioSection>
+                    <BioYear>2018</BioYear>
+                    Started studying Computer Science at Université Espoir.  
+                </BioSection> 
+                <BioSection>
+                    <BioYear>2019</BioYear>
+                    Took part at Codepath's Mobile App Development Bootcamp.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019</BioYear>
+                    Worked at Transition Digitale.  
+                </BioSection> 
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Launched The Spot Events with the help of Alpha Haïti's incubator. A platform connecting organizers and event participants, allowing check-ins, promotions and online payment. 
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Working on Alerte Rouge in partnership with Banj and CNTS. A platform for the public to share blood requests and plan donations at CNTS..
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022 to Present</BioYear>
+                    Works as a freelance.  
+                </BioSection>  
+            </Section>
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    I ♥
+                </Heading>
+                <Paragraph>
+                    God, Music, Technology,{' '}
+                    <Link href="https://www.instagram.com/p/BTcpaB3gltu/" target="_blank">Drawing</Link>
+                    , Coffee, {' '}
+                    <Link href="https://www.instagram.com/didierthelilballer/" target="_blank">Basketball</Link> 
+                    , Machine Learning and Philosophy.
+                </Paragraph>        
+            </Section>            
         </Container>
     );
 }
