@@ -4,11 +4,13 @@ import { WorkGridItem } from "../components/grid-item";
 import thumbTheSpot from "../public/images/works/screens.png";
 import thumbAlerteRouge from "../public/images/works/alerterouge.png";
 import thumbBatteryChecker from "../public/images/works/batterychecker.png";
-import thumbCovidTracker from "../public/images/works/cleanhands.jpeg";
+import thumbCovidTracker from "../public/images/works/covidtrack.jpeg";
 import thumbObjectDetector from "../public/images/works/jarvisdetector.png";
+import Layout from "../components/layouts/article";
 
 const Works = () => {
     return (
+        <Layout>
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
                 Works
@@ -53,6 +55,7 @@ const Works = () => {
                 </SimpleGrid>
             </Section>
         </Container>
+        </Layout>
     );
 };
 
