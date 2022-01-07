@@ -48,8 +48,8 @@ const theme = extendTheme({
     config,
     styles,
     components,
-    colors,
     fonts,
+    colors,
 });
 
 export default theme;
