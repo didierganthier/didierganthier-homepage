@@ -22,7 +22,19 @@ const GamingSetup = () => {
         )
     )
     const [scene] = useState(new THREE.Scene());
-    const [controls, setControls] = useState();
+    const [_controls, setControls] = useState();
+
+    const handleWindowResize = useCallback(() => {
+        const { current: container } = refContainer;
+
+        if(container && renderer){
+            const scW = container.clientWidth;
+            const scH = container.clientHeight;
+
+            renderer.setSize(scW, scH);
+        }
+
+    }, [renderer])
 
     /* eslint-disable react-hooks/exhaustive-deps */
 
@@ -100,6 +112,13 @@ const GamingSetup = () => {
         }
     }, [])
 
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize, false);
+        }
+    }, [renderer, handleWindowResize])
+ 
     return (
         <Box 
             ref={refContainer} 
