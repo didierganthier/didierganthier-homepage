@@ -1,10 +1,12 @@
-import { Box, Container, Heading, Image, useColorModeValue, Link, Button } from "@chakra-ui/react"
+import { Box, Container, Heading, Image, useColorModeValue, Link, Icon, List, ListItem, Button } from "@chakra-ui/react"
 import Paragraph from "../components/paragraph";
 import Section from "../components/section";
 import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
+import { WorkGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/article";
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook} from 'react-icons/io';
 
 const Page = () => {
     return (
@@ -96,7 +98,58 @@ const Page = () => {
                     <Link href="https://www.instagram.com/didierthelilballer/" target="_blank">Basketball</Link> 
                     , Machine Learning and Philosophy.
                 </Paragraph>        
-            </Section>            
+            </Section> 
+            <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/didierganthier" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @didierganthier
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/didierganthier_" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+                @didierganthier_
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://instagram.com/didierganthier" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @didierganthier
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.facebook.com/ganthier.didier.79" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoFacebook} />}
+              >
+                @ganthier.didier.79_
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+        </Section>            
         </Container>
         </Layout>
     );
