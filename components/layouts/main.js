@@ -3,6 +3,7 @@ import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
 import NoSsr from '../no-ssr.js'
 import GamingSetup from '../gaming-setup.js'
+import Footer from '../footer.js'
 
 
 const Main = ({ children, router }) => {
@@ -30,6 +31,7 @@ const Main = ({ children, router }) => {
         <GamingSetup />
       </NoSsr>
           {children}
+          <Footer/>
       </Container>
     </Box>
   )
