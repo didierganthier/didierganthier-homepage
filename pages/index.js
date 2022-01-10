@@ -31,8 +31,8 @@ const Page = () => {
                 </Heading>
                 <Paragraph>
                 Hello, I&apos;m Didier Peran Ganthier. 
-                Welcome to my website, I&apos;m a freelance, fullstack developer and "illustrator" based in Haiti. 
-                Illustrator is double quoted because I haven't been drawing much lately. 
+                Welcome to my website, I&apos;m a freelance, fullstack developer and &quot;illustrator&quot; based in Haiti. 
+                Illustrator is double quoted because I haven&apos;t been drawing much lately. 
                 I am passionate about problem-solving and design-thinking. 
                 When not online, I love to play basketball. 
                 Currently, I am working on my product called{' '}
