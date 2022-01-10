@@ -66,6 +66,7 @@ const GamingSetup = () => {
             )
             camera.position.copy(initialCameraPosition);
             camera.lookAt(target);
+            setCamera(camera);
 
             const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
             scene.add(ambientLight);

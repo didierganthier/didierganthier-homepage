@@ -12,7 +12,7 @@ const Page = () => {
         <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center"> 
-                Hello I'm a fullstack developer based in Haïti!
+                Hello I&apos;m a fullstack developer based in Haïti!
             </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>
@@ -30,8 +30,8 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                Hello, I'm Didier Peran Ganthier. 
-                Welcome to my website, I'm a freelance, fullstack developer and "illustrator" based in Haiti. 
+                Hello, I&apos;m Didier Peran Ganthier. 
+                Welcome to my website, I&apos;m a freelance, fullstack developer and "illustrator" based in Haiti. 
                 Illustrator is double quoted because I haven't been drawing much lately. 
                 I am passionate about problem-solving and design-thinking. 
                 When not online, I love to play basketball. 
@@ -67,7 +67,7 @@ const Page = () => {
                 </BioSection> 
                 <BioSection>
                     <BioYear>2019</BioYear>
-                    Took part at Codepath's Mobile App Development Bootcamp.
+                    Took part at Codepath&apos;s Mobile App Development Bootcamp.
                 </BioSection>
                 <BioSection>
                     <BioYear>2019</BioYear>
@@ -75,7 +75,7 @@ const Page = () => {
                 </BioSection> 
                 <BioSection>
                     <BioYear>2021</BioYear>
-                    Launched The Spot Events with the help of Alpha Haïti's incubator. A platform connecting organizers and event participants, allowing check-ins, promotions and online payment. 
+                    Launched The Spot Events with the help of Alpha Haïti&apos;s incubator. A platform connecting organizers and event participants, allowing check-ins, promotions and online payment. 
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
