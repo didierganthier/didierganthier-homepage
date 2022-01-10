@@ -4,7 +4,6 @@ import Section from "../components/section";
 import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
-import { WorkGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/article";
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook} from 'react-icons/io';
 
