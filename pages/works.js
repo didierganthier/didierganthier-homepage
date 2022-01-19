@@ -6,6 +6,7 @@ import thumbAlerteRouge from "../public/images/works/alerterouge.png";
 import thumbBatteryChecker from "../public/images/works/batterychecker.png";
 import thumbCovidTracker from "../public/images/works/covidtrack.jpeg";
 import thumbObjectDetector from "../public/images/works/jarvisdetector.png";
+import thumbInstagramClone from "../public/images/works/instagram-clone.png";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
@@ -31,6 +32,11 @@ const Works = () => {
                 <Section delay={0.3}>
                     <WorkGridItem id="jarvisdetector" title="Object Detector (Jarvis)" thumbnail={thumbObjectDetector}>
                         Object Recognition and Detection using Mobile Vision API.
+                    </WorkGridItem>    
+                </Section>
+                <Section delay={0.3}>
+                    <WorkGridItem id="instagramclone" title="React Instagram Clone" thumbnail={thumbInstagramClone}>
+                        Simple Instagram Clone with React and Firebase.
                     </WorkGridItem>    
                 </Section>
             </SimpleGrid>
