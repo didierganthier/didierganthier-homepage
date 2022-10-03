@@ -10,6 +10,7 @@
 - Next.js
 - Chakra UI
 - Framer Motion
+- Prettier
 
 
 ## Live Demo
