@@ -19,7 +19,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         Didier Peran Ganthier
                     </Heading>
-                    <p>Digital Visionary ( Developer / Illustrator ) </p>
+                    <p>Full Stack Developer </p>
                 </Box>
                 <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{md:6}} align="center">
                     <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/profile.jpg" alt="Profile Photo"/>
@@ -30,15 +30,17 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                Hello, I&apos;m Didier Peran Ganthier. 
-                Welcome to my website, I&apos;m a freelance, fullstack developer and &quot;illustrator&quot; based in Haiti. 
-                Illustrator is double quoted because I haven&apos;t been drawing much lately. 
-                I am passionate about problem-solving and design-thinking. 
-                When not online, I love to play basketball. 
+                Hi, I&apos;m Didier, I&apos;m a full-stack software engineer with 4+ years of experience specializing in Flutter, Javascript, and React. 
+                In 2019 I completed the CodePath Bootcamp teaching me Android Developement and how to use collaborative tools.
+                Currently doing Microverse, a remote software development program that uses pair programming and project building to teach development. 
+                Last year I worked as a Frontend Developer and this experience taught me how to work with corporate businesses and handle tight deadlines. 
+                I&apos;ve worked on a number of projects in the past year: A banking website, an app allowing people to request blood, and a ticketing app that recently reached 1k active users. 
+                Being passionate about coding made me part of the 1% active GitHub users in my country and I have an active streak of 100+ days of coding.
                 Currently, I am working on my product called{' '}
                 <NextLink href="works/thespot">
                     <Link>The Spot Events</Link>
                 </NextLink>.
+                I&apos;m very passionate about coding and I&apos;m always looking for new challenges and opportunities to learn and grow.
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="works/">
@@ -59,7 +61,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2014</BioYear>
-                    Started coding with Python and C. Completed first project (Calculator).  
+                    Started coding.  
                 </BioSection>
                 <BioSection>
                     <BioYear>2018</BioYear>
@@ -70,20 +72,24 @@ const Page = () => {
                     Took part at Codepath&apos;s Mobile App Development Bootcamp.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2019</BioYear>
-                    Worked at Transition Digitale.  
+                    <BioYear>2020</BioYear>
+                    Internship at Transition Digital as a Mobile Developer. Fixed 20+ bugs and implemented 10+ features in in-production apps.
                 </BioSection> 
                 <BioSection>
                     <BioYear>2021</BioYear>
-                    Launched The Spot Events with the help of Alpha Haïti&apos;s incubator. A platform connecting organizers and event participants, allowing check-ins, promotions and online payment. 
+                    Launched The Spot Events. A 1k users platform connecting event lovers, allowing check-ins, promotions and online payment. 
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
-                    Working on Alerte Rouge in partnership with Banj and CNTS. A platform for the public to share blood requests and plan donations at CNTS..
+                    Working on Alerte Rouge in partnership with Banj and CNTS. A platform for the public to share blood requests and plan donations at CNTS.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2022 to Present</BioYear>
-                    Works as a freelance.  
+                    <BioYear>2022</BioYear>
+                    Launched Haiti Blockchain Alliance with Banj. A community of blockchain developers and enthusiasts in Haiti.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Started Microverse. A remote software development program that uses pair programming and project building to teach development. 
                 </BioSection>  
             </Section>
             <Section delay={0.3}>
