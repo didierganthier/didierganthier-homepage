@@ -62,9 +62,9 @@ const Navbar = (props) => {
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-                    {/* <LinkItem href="/posts" path={path}>
+                    <LinkItem href="/posts" path={path}>
                         Posts
-                    </LinkItem> */}
+                    </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleButton/>
