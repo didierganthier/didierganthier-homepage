@@ -9,7 +9,7 @@ const Work = () => {
         <Layout title="React Instagram Clone">
             <Container>
                 <Title>
-                    Bookstore <Badge>2022</Badge>
+                    To-do list <Badge>2022</Badge>
                 </Title>
             </Container>
             <P>
