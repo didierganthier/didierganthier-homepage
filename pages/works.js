@@ -1,7 +1,6 @@
 import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
-import thumbTheSpot from "../public/images/works/screens.png";
 import thumbAlerteRouge from "../public/images/works/alerterouge.png";
 import thumbBatteryChecker from "../public/images/works/batterychecker.png";
 import thumbCovidTracker from "../public/images/works/covidtrack.jpeg";
