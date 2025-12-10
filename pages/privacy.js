@@ -248,4 +248,3 @@ const Privacy = () => {
 }
 
 export default Privacy
-export { getServerSideProps } from '../components/chakra'
