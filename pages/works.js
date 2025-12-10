@@ -19,13 +19,6 @@ const Works = () => {
                     Works
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                    <Section delay={0.1}>
-                        <WorkGridItem id="thespot" title="The Spot Events" thumbnail={thumbTheSpot}>
-                            An app that connects events organizers and participants.
-                            Recently reached 1k active users. A rating of 4.7/5 on the Play Store.
-                            Built with Flutter, Firebase, Node.js and Google Cloud Platform.
-                        </WorkGridItem>
-                    </Section>
                     <Section delay={0.2}>
                         <WorkGridItem id="alerterouge" title="Alerte Rouge" thumbnail={thumbAlerteRouge}>
                             Alerte Rouge is a mobile app that helps find suitable blood donors.
