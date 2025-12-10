@@ -30,7 +30,7 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                Hi, I'm Didier Ganthier, a Haitian full-stack software engineer and dedicated tech advocate with extensive experience in web and mobile development, 
+                Hi, I&apos;m Didier Ganthier, a Haitian full-stack software engineer and dedicated tech advocate with extensive experience in web and mobile development, 
                 utilizing technologies such as Flutter, React, and Node.js. Beyond his engineering roles for companies like IM Digital and Matchpoint AI, 
                 Ganthier is deeply involved in building Haiti&apos;s local tech ecosystem through mentorship and content creation, serving as a content reviewer 
                 for Stack Overflow and a mentor for platforms like Microverse and codebar. He has co-founded several impactful Haitian projects, including{' '}
