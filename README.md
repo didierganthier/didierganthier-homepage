@@ -1,73 +1,43 @@
-![](https://img.shields.io/badge/Personal-blue)
+# Didier Ganthier — Portfolio
 
-## Homepage
+The personal portfolio of Didier Peran Ganthier, a Senior Software Engineer based in Haiti and working globally across mobile, web, applied AI and civic infrastructure.
 
-> This is my personal portfolio where I showcase my works and I share my social media. I talk also about my experience as a full-stack developer.
+## Featured case studies
 
+- Alerte Rouge
+- Kwonik Ayiti
+- CivicSpace
+- M3 Innovate
+- Janjak
+- Momentum
 
-## Built With
+Each case study is managed from `data/portfolio.js`, which keeps the homepage, work index and detail routes consistent.
+
+## Built with
 
 - Next.js
 - Chakra UI
 - Framer Motion
-- Prettier
+- React Icons
 
+## Local development
 
-## Live Demo
-[Checkout here](https://bit.ly/didierganthier/)
+```bash
+npm install
+npm run dev
+```
 
+Open `http://localhost:3000`.
 
-## Getting Started
-To get a local copy up and running follow these simple example steps.
-1. Clone the project using `git clone` or just copy the command below:
-  ```
-   git clone https://github.com/didierganthier/didierganthier-homepage.git
-   ```
-2. Open the project with `Visual Studio Code`
-3. Run `npm install` to get the dependencies
+## Validation
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-4. Run the project using this command:
-  ```
-   npm run dev
-   ```
-  *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+```bash
+npm run lint
+npm run build
+```
 
-### Prerequisites
-- Having VsCode installed and configured.
-- Having Git installed and configured.
+## Author
 
-### Setup
-- Clone the repository.
-- Open the project folder in VS Code.
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@didierganthier](https://github.com/didierganthier)
-- Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
-- LinkedIn: [didierganthier](https://linkedin.com/in/didierganthier)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
+- [GitHub](https://github.com/didierganthier)
+- [LinkedIn](https://www.linkedin.com/in/didierganthier)
+- [Website](https://www.didierganthier.com)

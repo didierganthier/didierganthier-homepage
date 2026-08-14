@@ -1,41 +1,44 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import styled from "@emotion/styled";
-
-const LogoBox = styled.span`
-    font-weight: bold;
-    font-size: 18px;
-    display: inline-flex;
-    align-items: center;
-    height: 30px;
-    line-height: 20px;
-    padding: 10px;
-
-    &:hover img {
-        transform: rotate(20deg);
-    }
-`
+import NextLink from 'next/link'
+import { Box, Flex, Link, Text, useColorModeValue } from '@chakra-ui/react'
 
 const Logo = () => {
-    const footPrintImg = `/images/coding${useColorModeValue('-dark', '-dark')}.png`
+  const markBg = useColorModeValue('#101820', '#F6F2E9')
+  const markColor = useColorModeValue('#F6F2E9', '#101820')
 
-    return (
-        <Link href="/">
-            <a>
-                <LogoBox>
-                    <Image src={footPrintImg} width={30} height={30} alt="logo"/>
-                    <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                        fontFamily="M PLUS ROUNDED 1c"
-                        fontWeight="bold"
-                        ml={3}
-                    >
-                        Didier Peran Ganthier
-                    </Text>
-                </LogoBox>
-            </a>
-        </Link>
-    )
+  return (
+    <NextLink href="/" passHref>
+      <Link
+        _hover={{ textDecoration: 'none' }}
+        aria-label="Didier Ganthier — Home"
+      >
+        <Flex align="center" gap={3}>
+          <Box
+            w="38px"
+            h="38px"
+            borderRadius="12px"
+            bg={markBg}
+            color={markColor}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            fontFamily="mono"
+            fontWeight="700"
+            fontSize="sm"
+          >
+            DG
+          </Box>
+          <Box display={{ base: 'none', sm: 'block' }}>
+            <Text fontWeight="700" lineHeight="1.1" letterSpacing="-0.02em">
+              Didier Ganthier
+            </Text>
+            <Text fontSize="xs" opacity={0.58} mt={1}>
+              Senior Software Engineer
+            </Text>
+          </Box>
+        </Flex>
+      </Link>
+    </NextLink>
+  )
 }
 
 export default Logo

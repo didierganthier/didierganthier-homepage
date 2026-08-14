@@ -1,8 +1,21 @@
-import { Container, Heading, SimpleGrid, Box, Button, Input, HStack } from '@chakra-ui/react'
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  Box,
+  Button,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  HStack,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react'
+import { SearchIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import PostCard from '../components/post-card'
 import thumbSmartContract from '../public/images/contents/medium-smart-contract.jpeg'
 import microverseImg from '../public/images/contents/microverse.png'
 import gradientImg from '../public/images/contents/gradient-container.png'
@@ -26,6 +39,7 @@ import neuralNetworksImg from '../public/images/contents/neural-networks.jpg'
 const Posts = () => {
   const [filter, setFilter] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
+  const muted = useColorModeValue('gray.600', 'whiteAlpha.700')
 
   const allPosts = [
     {
@@ -139,57 +153,94 @@ const Posts = () => {
   })
 
   return (
-    <Layout title="Posts">
-      <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
-          Popular Posts
+    <Layout title="Writing">
+      <Container maxW="container.xl" py={{ base: 14, md: 24 }}>
+        <Text className="eyebrow" mb={5}>
+          Writing · {allPosts.length} articles
+        </Text>
+        <Heading
+          as="h1"
+          maxW="920px"
+          fontSize={{ base: '5xl', md: '7xl' }}
+          lineHeight=".96"
+          letterSpacing="-0.06em"
+        >
+          Ideas on AI, engineering and building.
         </Heading>
+        <Text
+          maxW="680px"
+          mt={7}
+          color={muted}
+          fontSize={{ base: 'lg', md: 'xl' }}
+          lineHeight="1.7"
+        >
+          Essays and notes published on Medium and LinkedIn — machine learning,
+          software architecture and the ideas shaping how I build.
+        </Text>
 
-        <Box mb={6}>
-          <HStack spacing={4} mb={4} flexWrap="wrap">
-            <Button
-              size="sm"
-              colorScheme={filter === 'all' ? 'teal' : 'gray'}
-              onClick={() => setFilter('all')}
-            >
-              All ({allPosts.length})
-            </Button>
-            <Button
-              size="sm"
-              colorScheme={filter === 'medium' ? 'teal' : 'gray'}
-              onClick={() => setFilter('medium')}
-            >
-              Medium ({allPosts.filter(p => p.platform === 'medium').length})
-            </Button>
-            <Button
-              size="sm"
-              colorScheme={filter === 'linkedin' ? 'teal' : 'gray'}
-              onClick={() => setFilter('linkedin')}
-            >
-              LinkedIn ({allPosts.filter(p => p.platform === 'linkedin').length})
-            </Button>
-          </HStack>
+        <HStack
+          spacing={3}
+          mt={{ base: 12, md: 16 }}
+          mb={6}
+          flexWrap="wrap"
+        >
+          <Button
+            size="sm"
+            borderRadius="full"
+            colorScheme={filter === 'all' ? 'brand' : 'gray'}
+            variant={filter === 'all' ? 'solid' : 'outline'}
+            onClick={() => setFilter('all')}
+          >
+            All ({allPosts.length})
+          </Button>
+          <Button
+            size="sm"
+            borderRadius="full"
+            colorScheme={filter === 'medium' ? 'brand' : 'gray'}
+            variant={filter === 'medium' ? 'solid' : 'outline'}
+            onClick={() => setFilter('medium')}
+          >
+            Medium ({allPosts.filter(p => p.platform === 'medium').length})
+          </Button>
+          <Button
+            size="sm"
+            borderRadius="full"
+            colorScheme={filter === 'linkedin' ? 'brand' : 'gray'}
+            variant={filter === 'linkedin' ? 'solid' : 'outline'}
+            onClick={() => setFilter('linkedin')}
+          >
+            LinkedIn ({allPosts.filter(p => p.platform === 'linkedin').length})
+          </Button>
+        </HStack>
 
+        <InputGroup maxW="420px" mb={{ base: 12, md: 16 }}>
+          <InputLeftElement pointerEvents="none">
+            <SearchIcon color={muted} />
+          </InputLeftElement>
           <Input
             placeholder="Search articles..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            size="md"
+            borderRadius="full"
           />
-        </Box>
+        </InputGroup>
 
-        <Section delay={0.1}>
-          <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            {filteredPosts.map((post, index) => (
-              <GridItem
-                key={index}
-                title={post.title}
-                thumbnail={post.thumbnail}
-                href={post.href}
-              />
-            ))}
-          </SimpleGrid>
-        </Section>
+        <SimpleGrid
+          columns={{ base: 1, lg: 2 }}
+          gap={{ base: 14, lg: 9 }}
+        >
+          {filteredPosts.map((post, index) => (
+            <Section delay={Math.min(index * 0.05, 0.25)} key={post.href}>
+              <Box mt={{ lg: index % 2 ? 16 : 0 }}>
+                <PostCard
+                  post={post}
+                  index={index}
+                  total={filteredPosts.length}
+                />
+              </Box>
+            </Section>
+          ))}
+        </SimpleGrid>
       </Container>
     </Layout>
   )
